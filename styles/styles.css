@@ -1,0 +1,187 @@
+/* '-------------------------------Start Public Styles--------------------------------*/
+
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+}
+/* '-----------------------------------End Public Styles--------------------------------*/
+
+/* -------------------------------------Start Global----------------------------------- */
+@font-face {
+  font-family: "NerkoOne";
+  src: url(../webfonts/Nerko_One/NerkoOne-Regular.ttf);
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url(../webfonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+body {
+  font-family: "Comfortaa", cursive;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+  color: var(--color-text) !important;
+}
+a,
+p,
+span {
+  color: inherit !important;
+}
+ul {
+  list-style-position: inside; /*//' make the dots insite the li */
+}
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+/*//' the width of the scroll bar*/
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+/*//' the Styles of the scroll bar body / */
+::-webkit-scrollbar-track {
+  background-color: var(--seconde-color);
+}
+/*' the Styles of the scroll bar Thumb*/
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+/* -----------------------------------End Global----------------------------------- */
+
+/*start game section */
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+nav {
+  background-color: rgb(58, 73, 123) !important;
+  margin-inline: auto;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+.home .card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+  color: var(--color-text) !important;
+}
+
+.home .card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+.badge-color {
+  background-color: var(--seconde-color);
+}
+
+.details {
+  background-color: #272729be;
+  backdrop-filter: blur(4px);
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.parent {
+  height: 200px;
+  overflow: hidden;
+}
+.parent img {
+  width: 100% !important;
+  height: 100%;
+}
+.parent,
+.children {
+  cursor: pointer;
+}
+.activeImage {
+  transform: scale(1.1);
+  filter: grayscale(0);
+  transition: all 0.3s ease-out !important;
+  /* box-shadow: rgb(255 255 255 / 56%) 0px 0px 4px 4px; */
+  box-shadow: rgb(255 255 255 / 56%) 0px 0px 1px 2px;
+}
+.notActiveImage {
+  transform: scale(1);
+  transition: all 0.5s;
+  border: red 2px solid;
+}
+
+/* loading page */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l4 2.5s infinite;
+}
+.loader:after {
+  animation-delay: -1.25s;
+}
+@keyframes l4 {
+  0% {
+    inset: 0 35px 35px 0;
+  }
+  12.5% {
+    inset: 0 35px 0 0;
+  }
+  25% {
+    inset: 35px 35px 0 0;
+  }
+  37.5% {
+    inset: 35px 0 0 0;
+  }
+  50% {
+    inset: 35px 0 0 35px;
+  }
+  62.5% {
+    inset: 0 0 0 35px;
+  }
+  75% {
+    inset: 0 0 35px 35px;
+  }
+  87.5% {
+    inset: 0 0 35px 0;
+  }
+  100% {
+    inset: 0 35px 35px 0;
+  }
+}

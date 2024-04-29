@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Game Over Side" />
+    <meta name="keywords" content="Game Over , موقع العاب" />
+    <meta name="author" content="Abdo Naser" />
+    <title>gameOver</title>
+    <!--' ===============  BootStrap5.3 =============== -->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css " />
+    <!--' ===============  Main Css File =============== -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <section class="games" id="games  ">
+        
+        <header>
+            <img src="./assets/images/wraper.png" class="w-100" alt="game photo" />
+        </header>
+
+        <!--//& nave Bar  -->
+        <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9">
+            <div class="container ">
+                <h5 class="navbar-brand">
+                    <img src="assets/images/logo-sm.png" alt="" style="max-width: 40px" srcset="">
+                    <a class="navbar-brand" href="#">Game Reviews</a>
+                </h5>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase" aria-current="page"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- //' Home Content -->
+        <main class="container my-5 home">
+            <section class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+                    <!-- <div class="col-md-3 ">
+                         <div class="card h-100 bg-transparent" role="button">
+                            <div class="card-body">
+                                <figure class="position-relative">
+                                    <img src="assets/images/thumbnail.jpg" alt=""
+                                        class="card-img-top object-fit-cover h-100 w-100" srcset="">
+                                </figure>
+                                <figcaption>
+                                    <div class="hstack justify-content-between">
+                                        <h3 class="h6 small">title</h3>
+                                        <span class="badge text-bg-primary p-2">Free</span>
+                                    </div>
+                                    <p class="card-text small text-center opacity-50">
+                                        Smilegate’s,free-to-play,multiplayer,ARPG,is,a,massive,adventure
+                                    </p>
+                                </figcaption>
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">genere</span>
+                                <span class="badge badge-color">platform</span>
+                            </footer>
+                        </div> 
+                    </div> -->
+                </div>
+            </section>
+        </main>
+    </section>
+
+
+    <section class="details  d-none   ">
+        <div class="container">
+            <div class="header hstack justify-content-between ">
+                <h5 class="h3 py-4 ">Game Details</h5>
+                <button class="close btn-close btn-close-white"></button>
+            </div>
+
+            <div class="row g-5 " id="detailsData">
+                <!-- <div class="col-md-4">
+                    <div class="parent w-100">
+                        <img src="assets/images/thumbnail.jpg" alt="">
+                    </div>
+                    <div class="row g-1 mt-4">
+                        <div class="col-md-6 child">
+                            <img class="w-100" src="assets/images/2.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 child">
+                            <img class="w-100" src="assets/images/6.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 child">
+                            <img class="w-100" src="assets/images/bg2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h3>Title : </h3>
+                    <p>Category : <span class="badge text-bg-info">Category </span> </p>
+                    <p>Platform : <span class="badge text-bg-info">Platform </span> </p>
+                    <p>Status : <span class="badge text-bg-info"> Status</span> </p>
+                    <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque magni voluptatibus
+                        eveniet corrupti deserunt non earum quam incidunt totam explicabo! Non laborum fugiat est nemo
+                        vel molestiae harum veritatis consequatur.</p>
+                    <a class="btn btn-outline-warning" target="_blank" href="">Show Game</a>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+
+
+    <!--' ============ BootStrap JS File ============ -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--' ============ Main Js File ============ -->
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
